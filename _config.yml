@@ -12,7 +12,7 @@ addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: puzzor
+twitter_username: puzzorsj
 github_username:  puzzor
 instagram_username: 
 reddit_username: 
@@ -24,7 +24,7 @@ facebook_link:
 
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/puzzorsj\">Puzzor</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/Puzzor\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_right: "on <a href=\"https://github.com/Puzzor\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown

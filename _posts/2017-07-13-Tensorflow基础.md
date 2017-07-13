@@ -12,7 +12,7 @@ published: false
      -如果在导入tensorflow过程中出现DLL未找到的错误则使用denpends工具打开_pywrap_tensorflow_internal.pyd查看依赖的dll并排错
      
 ### Tensorflow 线性回归案例学习
-```ruby
+```python
     import tensorflow as tf
     import numpy
     import matplotlib.pyplot as plt

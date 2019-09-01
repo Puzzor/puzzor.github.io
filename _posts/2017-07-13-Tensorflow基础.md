@@ -72,7 +72,7 @@ published: false
 ### PokemonGo 中精灵进化过程中CP的线性回归预测问题
 在训练小精灵过程中，一个很重要的问题是如何选取一个具有良好属性的精灵宝贝进行升级，以在升级后获得更高的CP值，我们将尝试利用线性回归模型探究升级后的CP值和哪些因素有关系。
 我们首先下载训练数据[pokemon.csv](https://www.openintro.org/stat/data/pokemon.csv)
-首先我们来看一元线性回归。我们拟选取1000次进行迭代，并假设升级后的CP只和初始CP有关联，利用![liner_regression.png]({{site.baseurl}}/_posts/liner_regression.png)进行训练，代码如下
+首先我们来看一元线性回归。我们拟选取1000次进行迭代，并假设升级后的CP只和初始CP有关联，利用![liner_regression.png]({{site.baseurl}}/_posts/assets/liner_regression.png)进行训练，代码如下
 
 > 一元线性回归
 
@@ -143,7 +143,7 @@ published: false
         plt.show()
 
 训练完成后我们发现最后的损失是30.3758，W为1.88108，b为4.19906,图形如下：
-![lr_result_1.png]({{site.baseurl}}/_posts/lr_result_1.png)
+![lr_result_1.png]({{site.baseurl}}/_posts/assets/lr_result_1.png)
 
 看到上述结果，我们的问题是：这个是最好结果么？应该不是，于是我们考虑是不是可能是二元、三元等线性相关，比如和原始CP的二次方，三次方等等，于是我们分别修改模型为：
 

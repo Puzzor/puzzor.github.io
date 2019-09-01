@@ -1,0 +1,14 @@
+ docs:
+   - title: class demo
+     children:
+       - title: "article 1"
+         url: " url 1 "
+       - title: "article 2"
+         url: " url 2 "
+
+   - title: class demo
+     children:
+       - title: "article 4"
+         url: " url 4 "
+       - title: "article 3"
+         url: " url 3 "

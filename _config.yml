@@ -36,4 +36,4 @@ kramdown:
 permalink: pretty
 exclude: [vendor]
 
-theme: jekyll-theme-hacker
+theme: jekyll-theme-cayman

@@ -1,14 +1,11 @@
-<nav id="my-menu">
+<header>
   <div>
-    <p>{{ site.title }}</p>
-
-    <ul class="pages">
-      <li><a href="{{ site.baseurl }}/"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="{{ site.baseurl }}/posts/"><i class="fa fa-archive"></i> All Posts</a></li>
-      <li><a href="{{ site.baseurl }}/search/"><i class="fa fa-search"></i> Search</a></li>
-    </ul>
-
-    {% include social_links.html %}
+    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+    {% assign owner_first_name = site.owner | split: " " %}
+    <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
+    </a>
+    <div class="header-links">
+      {% include links.html %}
+    </div>
   </div>
-</nav>
-<div class="menu-button" href="#menu"><i class="fa fa-bars"></i></div>
+</header>

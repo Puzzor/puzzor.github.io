@@ -1,39 +1,32 @@
-# Site settings
-title: "Puzzor"
-email: puzzorsj@gmail.com
-description: "A dark blog theme for Jekyll."
-baseurl: ""
-url: "https://puzzor.github.io/"
-title_description: "A blog by @Puzzor"
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
-google_analytics: ""
-github_repository: https://github.com/Puzzor
-addthis_id: ra-513c6fa83da6ec67
-post_limit: 5
+title: Hacker-Blog
+description: "A Jekyll Blog Theme For Hackers"
+author:
+  name: "SomeHacker"
+  email: "someone@somewebsite.somedomain"
+  url: "https://ashishchaudhary.in/hacker-blog"
 
-# Social usernames/URLs
-twitter_username: puzzorsj
-github_username:  puzzor
-instagram_username: 
-reddit_username: 
-linkedin_link: 
-google_plus_link: 
-stackoverflow_link: 
-xing_link:
-facebook_link:
+baseurl: /
 
-# Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/puzzorsj\">Puzzor</a>"
-footer_right: "on <a href=\"https://github.com/Puzzor\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
 
-# Build settings
-markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
 
-permalink: pretty
-exclude: [vendor]
-
-theme: jekyll-theme-cayman
+# Custom variables
+owner : "SomeHacker"
+year : "2018"

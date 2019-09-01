@@ -1,7 +1,6 @@
 ---
 published: true
 ---
-[TOC]
 
 ## Linksys Velop Authentication Bypass
 

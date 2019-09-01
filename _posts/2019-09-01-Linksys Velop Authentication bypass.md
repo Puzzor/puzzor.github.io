@@ -1,7 +1,10 @@
 ---
 published: true
 ---
+[TOC]
+
 ## Linksys Velop Authentication Bypass
+
 
 ### Affected Software
 Firmware version:	Before 1.1.8.192419

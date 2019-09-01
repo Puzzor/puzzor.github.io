@@ -70,7 +70,7 @@ X-JNAP-Action: http://linksys.com/jnap/nodes/setup/SetAdminPassword
 ### Timeline
 We reported the bug to the vendor in Feb,2019 and they finally released a patch in August:
 
-~~~shell
+~~~text
 25 Feb 2019 03:07:55 UTC: We submitted the problem to vendor
 26 Feb 2019 20:55:22 UTC: The vendor acknowledged the problem and reproduced it.
 31 May 2019 12:39:01 UTC: We asked if there is any updates. No response

@@ -1,5 +1,6 @@
 ---
 published: true
+categories: [debug]
 ---
 ## Trace javascript execution in Chrome
 We can insert some Math.cos(0x0), Math.cos(0x2), etc. into the html to trace the execution of javascript in Chrome. Then, in windbg, set a breakpoint at ***chrome_child!v8::base::ieee754::cos*** to trace. ***chrome_child!v8::base::ieee754::cos*** accepts one parameter and it's a **double.**

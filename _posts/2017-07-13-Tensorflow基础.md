@@ -1,5 +1,6 @@
 ---
 published: false
+categories: [machine learning, tensorflow]
 ---
 ## Tensorflow 基础
 ### Tensorflow 在Windows下的安装

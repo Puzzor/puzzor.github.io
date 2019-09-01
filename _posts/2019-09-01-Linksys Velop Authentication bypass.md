@@ -1,5 +1,6 @@
 ---
 published: true
+categories: [vulnerability,Linksys]
 ---
 
 ## Linksys Velop Authentication Bypass

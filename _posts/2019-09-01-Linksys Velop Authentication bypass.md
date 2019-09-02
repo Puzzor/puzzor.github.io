@@ -85,5 +85,5 @@ We reported the bug to the vendor in Feb,2019 and they finally released a patch 
 21 Aug 2019 03:38:42 UTC: We asked if there is any updates
 23 Aug 2019 21:01:30 UTC: The vendor replied as :We have finally released a fix to address this issue: https://www.linksys.com/us/support-article?articleNum=207568. We have not applied for a CVE and do not have any plans to do so. Thank you!
 26 Aug 2019 00:38:08 UTC: We asked we will apply a CVE for this issue
-27 Aug 2019 17:23:51 UTC:The vendor replied as :we have no objections if you'd like to file for a CVE.
+27 Aug 2019 17:23:51 UTC: The vendor replied as :we have no objections if you'd like to file for a CVE.
 ~~~

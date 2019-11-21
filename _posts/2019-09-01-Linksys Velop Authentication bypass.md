@@ -14,7 +14,7 @@ Velop is WHOLE HOMEMESH Wi-Fi system from LINKSYS. It allows users enjoy fast, n
 There are three categories from their official site :WHW0303,WHW0302,WHW0301. The differences between these three is the pack count: 1, 2 or 3. The system are the same.
 ### Vulnerability Details
 CVE-2019-16340
-During our analysis, we found a critical bug in its firmware and this vulnerability may allow an unauthenticated user get administrator privilege. The problem is caused by the API of **/sysinfo_json.cgi**, requesting this url will leak sensitive information and may lead to authentication bypass.
+During the analysis, I found a critical bug in its firmware and this vulnerability may allow an unauthenticated user get administrator privilege. The problem is caused by the API of **/sysinfo_json.cgi**, requesting this url will leak sensitive information and may lead to authentication bypass.
 #### PoC
 We could get some useful information with the PoC below:
 ~~~http

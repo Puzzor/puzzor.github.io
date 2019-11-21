@@ -3,4 +3,4 @@ layout: page
 title: About
 ---
 
-Something about me.
+I am a PhD student in IIE, my research is mainly on fuzzing.

@@ -35,7 +35,7 @@ POST /JNAP/ HTTP/1.1
     {"configApSsid":"ssid","configApPassphrase":"wifipass","srpLogin":"user","srpPassword":"password"}
 ~~~
 
-Through the action name, we think this request is used to configure the smart wifi so it needn't any authentication.The first .lua file which processes this request is smartconnect_server.lua in /JNAP/modules/:
+Through the action name, this request seems to be used to configure the smart wifi so it needn't any authentication.The first .lua file which processes this request is smartconnect_server.lua in /JNAP/modules/:
 ~~~lua
 local function SmartConnectConfigure(ctx, input)
         local smc = require('smartconnect')

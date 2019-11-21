@@ -3,7 +3,7 @@ published: true
 categories: [vulnerability,microsoft]
 tags: [vulnerability,microsoft,cve-2019-1148,fontsub]
 ---
-## CVE-2019-1148--Microsoft FontSub.dll CmapFormat4Ids object OOB read
+## Microsoft FontSub.dll CmapFormat4Ids object OOB read
 
 ### Affected Software
 ~~~shell

@@ -37,6 +37,7 @@ start    end        module name
 The Microsoft Font Subsetting DLL (fontsub.dll) is a default Windows helper library for subsetting TTF fonts.
 
 ### Vulnerability Details
+CVE-2019-1148
 During our analysis, we found a OOB read problem in 
 GetGlyphIdx function, the comparison at 0x100069C3 is not enough, which may cause out of bound read.
 

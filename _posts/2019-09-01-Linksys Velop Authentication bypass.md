@@ -13,6 +13,7 @@ Firmware version:	Before 1.1.8.192419
 Velop is WHOLE HOMEMESH Wi-Fi system from LINKSYS. It allows users enjoy fast, nonstop Wi-Fi everywhere with Velop’s modular easy-to-use Wi-Fi Mesh system.
 There are three categories from their official site :WHW0303,WHW0302,WHW0301. The differences between these three is the pack count: 1, 2 or 3. The system are the same.
 ### Vulnerability Details
+CVE-2019-16340
 During our analysis, we found a critical bug in its firmware and this vulnerability may allow an unauthenticated user get administrator privilege. The problem is caused by the API of **/sysinfo_json.cgi**, requesting this url will leak sensitive information and may lead to authentication bypass.
 #### PoC
 We could get some useful information with the PoC below:
@@ -78,16 +79,16 @@ By sending this request to the router, we can successfully change the administra
 We reported the bug to the vendor in Feb,2019 and they released a patch in August:
 
 ~~~text
-25 Feb 2019 03:07:55 UTC: We submitted the problem to vendor
+25 Feb 2019 03:07:55 UTC: Submitted the problem to vendor
 26 Feb 2019 20:55:22 UTC: The vendor acknowledged the problem and reproduced it.
-31 May 2019 12:39:01 UTC: We asked if there is any updates. No response
-06 Jun 2019 03:42:03 UTC: We asked if there is any updates. 
+31 May 2019 12:39:01 UTC: Asked if there is any updates. No response
+06 Jun 2019 03:42:03 UTC: Asked if there is any updates. 
 06 Jun 2019 04:41:23 UTC: The vendor reply as: Apologies for the delay in response; the engineering team informs me that a firmware release for Velop will be released later this month. Would you like a preview of this firmware to confirm our fix?
-06 Jun 2019 08:28:51 UTC: We replied : No.
-25 Jul 2019 00:44:31 UTC: We asked for any updates. No response.
+06 Jun 2019 08:28:51 UTC: Replied : No.
+25 Jul 2019 00:44:31 UTC: Asked for any updates. No response.
 26 Jul 2019 18:22:12 UTC: The vendor replied: We are starting a limited rollout of the release starting tonight and if all goes well, the full release will be opened up in the first week of August. Thank you!
-21 Aug 2019 03:38:42 UTC: We asked if there is any updates
+21 Aug 2019 03:38:42 UTC: Asked if there is any updates
 23 Aug 2019 21:01:30 UTC: The vendor replied as :We have finally released a fix to address this issue: https://www.linksys.com/us/support-article?articleNum=207568. We have not applied for a CVE and do not have any plans to do so. Thank you!
-26 Aug 2019 00:38:08 UTC: We asked we will apply a CVE for this issue
-27 Aug 2019 17:23:51 UTC: The vendor replied as :we have no objections if you'd like to file for a CVE.
+26 Aug 2019 00:38:08 UTC: Asked we will apply a CVE for this issue
+27 Aug 2019 17:23:51 UTC: Replied:we have no objections if you'd like to file for a CVE.
 ~~~

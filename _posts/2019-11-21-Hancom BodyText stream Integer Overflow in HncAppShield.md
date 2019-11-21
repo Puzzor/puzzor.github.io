@@ -1,6 +1,7 @@
 ---
 published: true
-categories: [vulnerability,Linksys]
+categories: [vulnerability,Hancom]
+tags: [vulnerability,Hancom,bodystream]
 ---
 
 
@@ -39,6 +40,8 @@ Hancom Office is the only Office software you need to edit in a variety of forma
 It is widely used in Korean.
 
 ### Vulnerability Details
+No CVE assigned
+
 When processing .hwp files, NEO Office doesn't check the BodyText stream correctly, which leads to Integer Overflow.
 
 Crash Context
@@ -208,7 +211,7 @@ HncAppShield!AppShield_InspectMalware+0x3abd:
 
 At this point, EDI will be 0xFFFFFFFF, that is the v11. Next is the overflow:
 
-~~~C
+~~~shell
 if ( v11 + OLE_offset + 4 > OLE_LENGTH_LOCAL_ )
             v11 = OLE_LENGTH_LOCAL_ - OLE_offset - 4;
 0:009> p
@@ -282,3 +285,7 @@ HncAppShield!AppShield_InspectMalware+0x2fec:
 A link to the PoC locates at: [PoC](https://github.com/Puzzor/PoCs/blob/master/C1E64232970F2F4BA1CBF8D04777B016)
 
 
+
+### Timeline
+2018-05-27 Discovered
+2019-11-10 Already Patched

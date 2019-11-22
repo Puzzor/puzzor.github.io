@@ -38,7 +38,7 @@ A critical authentication bypass bug is found in the firmware and this vulnerabi
 
 #### Risk 3(Critical): [Linksys Velop zbtest Command Injection With Preauth](https://puzzor.github.io/Linksys-Velop-zbtest-command-injection)
 
-CVE-2018-17208 (Although I found this bug independently, another researcher had reported it first, so this CVE doesn't belong to me)
+CVE-2018-17208 (Although I found this bug independently, another researcher had reported it first)
 
 There are a few command injection flaws in /cgi-bin/zbtest.cgi which may lead to RCE without any authentication.
 

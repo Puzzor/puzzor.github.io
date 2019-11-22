@@ -34,11 +34,10 @@ CVE-2018-20333 CVE-2018-20334 CVE-2018-20335 CVE-2018-20336 CVE-2019-16340
 
 
 ### Hornor
-~~~text
-2016 MSRC Top 24 (Total 100)
-Microsoft 2016 Top Ranking Researcher
-2017 MSRC Top 18 (Total 100)
-Bitdefender Hall of Fame https://www.bitdefender.com/site/view/bug-bounty-hall-of-fame.html
-Geekpwn 2017 Hall of Fame (http://hof.geekpwn.org/)
-ASUS Security Hall of Fame https://www.asus.com/uk/Static_WebPage/ASUS-Product-Security-Advisory/
-~~~
+
+- 2016 MSRC Top 24 (Total 100)
+- Microsoft 2016 Top Ranking Researcher
+- 2017 MSRC Top 18 (Total 100)
+- Bitdefender Hall of Fame https://www.bitdefender.com/site/view/bug-bounty-hall-of-fame.html
+- Geekpwn 2017 Hall of Fame (http://hof.geekpwn.org/)
+- ASUS Security Hall of Fame https://www.asus.com/uk/Static_WebPage/ASUS-Product-Security-Advisory/

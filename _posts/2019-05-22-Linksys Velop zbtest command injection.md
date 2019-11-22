@@ -12,7 +12,7 @@ There are three categories from their official site :WHW0303,WHW0302,WHW0301. Th
 ### Vulnerability Details
 CVE-2018-17208
 
-Since this bug is very easy and there is another researcher has published](https://langkjaer.com/velop.html) the anlysis, so I wont analyze it too much.
+Since this bug is very easy and there is another researcher has [published](https://langkjaer.com/velop.html) the anlysis, so I wont analyze it too much.
 
 zbtest.cgi in /cgi-bin/ is a lua script and let's we take a look into it. The most interesting part starts from line 480:
 ~~~lua

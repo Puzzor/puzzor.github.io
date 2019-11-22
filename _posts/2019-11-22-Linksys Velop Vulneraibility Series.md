@@ -5,9 +5,9 @@ tags: [Linksys Velop Command Injection]
 ---
 
 ### Introduction
-I was auditing Linksys Velop router before and this post will summarize the previous findings on this router. 
+I used to audit Linksys Velop router and this post will summarize the previous findings on this router. 
 
-I totally found 4 vulnerbilities in this router, 3 of them are critical which allow the attacker in the LAN to gain admin right without authentication, 1 is information disclosure problem which the vendor think riskless and wont fix.
+I totally found 4 vulnerbilities in this router, 3 of them are critical which allow the attacker in the LAN to gain admin priviledge without authentication, 1 is information disclosure problem which the vendor think riskless and wont fix.
 
 The following posts will describe them in detail, all the bugs have been reported to the vendor and should be fixed now.
 

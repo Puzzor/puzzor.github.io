@@ -105,5 +105,5 @@ We reported the bug to the vendor in Feb,2019 and they released a patch in Augus
 ~~~text
 2018.04.04: Found the bug
 
-2018-09-19: Another researcher published the bug with link: (link)[https://langkjaer.com/velop.html]
+2018-09-19: Another researcher published the bug with link: link](https://langkjaer.com/velop.html)
 ~~~

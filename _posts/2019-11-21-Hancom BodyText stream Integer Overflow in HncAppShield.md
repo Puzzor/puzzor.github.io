@@ -32,8 +32,7 @@ start    end        module name
 ~~~
 
 ### Product Background
-Hancom Office is the only Office software you need to edit in a variety of formatsand translate into many languages,all from wherever you are.
-It is widely used in Korean.
+Hancom Office is the only Office software you need to edit in a variety of formatsand translate into many languages,all from wherever you are. It is widely used in Korean.
 
 ### Vulnerability Details
 No CVE assigned
@@ -277,11 +276,11 @@ HncAppShield!AppShield_InspectMalware+0x2fec:
 ~~~
 
 #### PoC
-
 A link to the PoC locates at: [PoC](https://github.com/Puzzor/PoCs/blob/master/C1E64232970F2F4BA1CBF8D04777B016)
 
 
 
 ### Timeline
 2018-05-27 Discovered
+
 2019-11-10 Already Patched

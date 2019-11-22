@@ -12,9 +12,7 @@ There are three categories from their official site :WHW0303,WHW0302,WHW0301. Th
 ### Vulnerability Details
 Since the vendor marked this issue as wont fix, so this is only a risk.
 
-There are many information leak problems, one of them is through /sysinfo_json.cgi, requesting this url will leak sensitive information and may lead to authentication bypass.
-
-The Linksys APP will use JNAP to communicate with the router, and  there are many kinds of X-JNAP-Action can be made to request the router, we found the router can handle many actions without authentication. A sample request can be :
+The Linksys APP will use JNAP to communicate with the router, and  there are many kinds of X-JNAP-Action can be made to request the router, we found the router can handle many actions without authentication. A sample request can be:
 ~~~http
 POST /JNAP/ HTTP/1.1
 Host: 192.168.1.1
@@ -122,4 +120,5 @@ Beyond action of http://linksys.com/jnap/devicelist/GetDevices , the following a
 ### Timeline
 
 2018-03-04: Discovered
+
 2019-02-05: Reported and the vendor marked this issue wont fix

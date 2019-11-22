@@ -171,4 +171,5 @@ The following PoC will cause a reboot of the node.
 ### Timeline
 
 2018-03-04: Discovered
+
 2019-02-05: Reported, but the vendor has fixed

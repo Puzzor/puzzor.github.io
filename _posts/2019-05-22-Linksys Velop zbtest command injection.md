@@ -12,9 +12,9 @@ There are three categories from their official site :WHW0303,WHW0302,WHW0301. Th
 ### Vulnerability Details
 CVE-2018-17208
 
-Since this bug is very easy and there is another researcher has (published)[https://langkjaer.com/velop.html] the anlysis, so I wont analyze it too much.
+Since this bug is very easy and there is another researcher has published](https://langkjaer.com/velop.html) the anlysis, so I wont analyze it too much.
 
-zbtest.cgi in /cgi-bin/ is a lua script and we took a look into it. The most interesting part starts from line 480:
+zbtest.cgi in /cgi-bin/ is a lua script and let's we take a look into it. The most interesting part starts from line 480:
 ~~~lua
 -- Here is a some code that can control bulb
 cmd = params["cmd"]
@@ -60,7 +60,7 @@ elseif cmd == "level" and level and node_id then
 end
 ~~~
 
-We can deliver 3 parameters to the zbtest.cgi: cmd, nodeid and level. There are 5 command injection problems in this code snippet.
+We can deliver 3 parameters to the zbtest.cgi: cmd, nodeid and level. There are command injection problems in this code snippet.
 
 - cmd with "remove", no check of node_id
 - cmd with "on", no check of node_id
@@ -99,9 +99,6 @@ Connection: close
 ~~~
 
 ### Timeline
-
-We reported the bug to the vendor in Feb,2019 and they released a patch in August:
-
 ~~~text
 2018.04.04: Found the bug
 

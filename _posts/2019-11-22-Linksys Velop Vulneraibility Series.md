@@ -7,12 +7,12 @@ tags: [Linksys Velop Command Injection]
 ### Introduction
 I was auditing Linksys Velop router before and this post will summarize the previous findings on this router. 
 
-I totally found 4 vulnerbilities in this router, 3 of them are critical which may let attacker in the same LAN gain admin right without authentication, 1 is information disclosure problem which the vendor think riskless and wont fix.
+I totally found 4 vulnerbilities in this router, 3 of them are critical which allow the attacker in the LAN to gain admin right without authentication, 1 is information disclosure problem which the vendor think riskless and wont fix.
 
 The following posts will describe them in detail, all the bugs have been reported to the vendor and should be fixed now.
 
 ### Links
-#### Risk 1: [Linksys Velop configapssid command injection with preauth](https://puzzor.github.io/Linksys-Velop-configApSsid-command-injection-with-preauth)
+#### Risk 1(Critical): [Linksys Velop configapssid Command Injection With Preauth](https://puzzor.github.io/Linksys-Velop-configApSsid-command-injection-with-preauth)
 
 No CVE
 
@@ -24,9 +24,9 @@ There is a command injection vulnerability through JNAP action of http://linksys
 
 2019-02-05: Reported, but the vendor has already fixed
 
-#### Risk 2: [Linksys Velop authentication bypass](https://puzzor.github.io/Linksys-Velop-Authentication-bypass)
+#### Risk 2(Critical): [Linksys Velop Authentication Bypass](https://puzzor.github.io/Linksys-Velop-Authentication-bypass)
 
-CVE-2019-16340
+[CVE-2019-16340](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16340)
 
 A critical authentication bypass bug is found in the firmware and this vulnerability may allow an unauthenticated user get administrator privilege. The problem is caused by the API of **/sysinfo_json.cgi**, requesting this url will leak sensitive information and may lead to authentication bypass.
 
@@ -34,11 +34,11 @@ A critical authentication bypass bug is found in the firmware and this vulnerabi
 
 25 Feb 2019 03:07:55 UTC: Submitted the problem to vendor
 
-23 Aug 2019 21:01:30 UTC: Fixed && CVE assigned: CVE-2019-16340
+23 Aug 2019 21:01:30 UTC: Fixed && CVE assigned: [CVE-2019-16340](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16340)
 
-#### Risk 3: [Linksys Velop abtest command injection with preauth](https://puzzor.github.io/Linksys-Velop-zbtest-command-injection)
+#### Risk 3(Critical): [Linksys Velop zbtest Command Injection With Preauth](https://puzzor.github.io/Linksys-Velop-zbtest-command-injection)
 
-CVE-2018-17208 (Although I found this bug independently, another researcher had reported it first, so this CVE dont belong to me)
+CVE-2018-17208 (Although I found this bug independently, another researcher had reported it first, so this CVE doesn't belong to me)
 
 There are a few command injection flaws in /cgi-bin/zbtest.cgi which may lead to RCE without any authentication.
 
@@ -48,7 +48,7 @@ There are a few command injection flaws in /cgi-bin/zbtest.cgi which may lead to
 
 2018-09-19: Another researcher published the bug with link: (link)[https://langkjaer.com/velop.html]
 
-#### Risk 4: [Linksys Velop Information Disclosure](https://puzzor.github.io/Linksys-Velop-Information-Leak)
+#### Risk 4(Won't Fix): [Linksys Velop Information Disclosure](https://puzzor.github.io/Linksys-Velop-Information-Leak)
 
 No CVE
 

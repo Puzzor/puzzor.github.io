@@ -8,13 +8,15 @@ tags: [Linksys Velop Command Injection]
 The firmware version which I test is 1.1.2.185309
 ### Product Background
 Velop is WHOLE HOMEMESH Wi-Fi system from LINKSYS. It allows users enjoy fast, nonstop Wi-Fi everywhere with Velop’s modular easy-to-use Wi-Fi Mesh system.
+
 There are three categories from their official site :WHW0303,WHW0302,WHW0301. The differences between these three is the pack count: 1, 2 or 3. The system are the same.
 ### Vulnerability Details
 No CVE at the moment
+
 There is a command injection vulnerability through JNAP action of http://linksys.com/jnap/nodes/smartconnect/SmartConnectConfigure , the vulneraibility may lead to RCE without authentication
 JNAP is a web services protocol for Cisco, similar as HNAP. 
 
-There are many X-JNAP-Actions can be made through HTTP request. One of the action is http://linksys.com/jnap/nodes/smartconnect/SmartConnectConfigure , for example, the http server can handle the following request without any authentication.
+There are many X-JNAP-Actions can be made through HTTP request. One of the action is http://linksys.com/jnap/nodes/smartconnect/SmartConnectConfigure, for example, the http server can handle the following request without any authentication.
 ~~~http
 POST /JNAP/ HTTP/1.1
     Host: 10.158.1.1

@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 categories: [vulnerability,Linksys]
 tags: [Linksys Velop Command Injection]
 ---

@@ -4,11 +4,8 @@ categories: [vulnerability,Linksys]
 tags: [Linksys Velop Command Injection]
 ---
 
-## Linksys Velop command injection with preauth
-
-
 ### Affected Software
-The firmware version which I test is 1.1.2.185309, but there is a newer version of 1.1.2.187020 on March 20, 2018
+The firmware version which I test is 1.1.2.185309
 ### Product Background
 Velop is WHOLE HOMEMESH Wi-Fi system from LINKSYS. It allows users enjoy fast, nonstop Wi-Fi everywhere with Velop’s modular easy-to-use Wi-Fi Mesh system.
 There are three categories from their official site :WHW0303,WHW0302,WHW0301. The differences between these three is the pack count: 1, 2 or 3. The system are the same.

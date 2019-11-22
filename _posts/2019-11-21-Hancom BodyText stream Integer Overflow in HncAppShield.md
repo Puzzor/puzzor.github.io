@@ -4,10 +4,6 @@ categories: [vulnerability,Hancom]
 tags: [vulnerability,Hancom,bodystream]
 ---
 
-
-## Hancom BodyText stream Integer Overflow in HncAppShield
-
-
 ### Affected Software
 ~~~shell
 start    end        module name

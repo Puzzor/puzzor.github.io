@@ -3,9 +3,8 @@ layout: page
 title: About
 ---
 
-I am a PhD student in IIE, my research is mainly on fuzzing.
+I am a PhD student in IIE, my research is mainly on software&system security.
 
-CVEs I got (don't update this page often)
 
 ### Microsoft CVEs
 
